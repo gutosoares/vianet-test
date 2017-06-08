@@ -1,0 +1,13 @@
+{
+  "name": "vianet-test",
+  "version": "1.0.0",
+  "description": "Simple project build in HTML and Vue.js",
+  "main": "index.js",
+  "author": "Augusto Soares <gutosoares@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
