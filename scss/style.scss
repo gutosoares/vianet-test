@@ -1,28 +1,4 @@
-@import 'variables';
-
-// Reset
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: $font-default;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-	text-decoration: none;
-}
-
-img {
-	display: block;
-	max-width: 100%;
-}
+@import 'reset';
 
 // Destaques
 .destaques {
@@ -155,6 +131,70 @@ img {
 }
 
 // Main Footer
-.main-footer {
+.footer-bg {
   background: url('../img/footer-bg.jpg') no-repeat center;
+  background-size: cover;
+  padding: 60px 0 50px 0;
+}
+
+.footer {
+  max-width: $container;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .footer-item {
+    margin: 20px 10px;
+    color: #fff;
+    flex: 1 1 260px;
+  	min-width: 260px;
+    align-self: flex-start;
+
+    p {
+      margin-bottom: 20px;
+      font-weight: 100;
+      color: #eee;
+      font-size: 0.875em;
+    }
+
+    sub {
+      margin-right: 5px;
+      font-size: 0.8125rem;
+    }
+
+    ul {
+      margin-left: 5px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    ul li a {
+      color: #eee;
+      font-size: 0.875em;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+
+    ul::before {
+      content: '';
+      display: block;
+      width: 200px;
+      height: 3px;
+      background: #fff;
+    }
+  }
+}
+
+footer {
+  background: darken($footer-color, 10%);
+  color: $footer-info;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 0.8em;
 }
