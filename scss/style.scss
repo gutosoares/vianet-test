@@ -34,6 +34,7 @@ img {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    flex-direction: row;
 
     a {
       margin-right: 20px;
@@ -96,4 +97,64 @@ img {
       font-size: 1em;
     }
   }
+}
+
+// Info
+.info {
+  max-width: $container;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .info-item {
+    margin: 20px 10px;
+    flex: 1 1 0;
+  	min-width: 175px;
+    align-self: center;
+
+    img {
+      margin: 0 auto 20px auto;
+    }
+
+    h2, p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: $main-color;
+      font-weight: 100;
+    }
+
+    p {
+      color: $secundary-color;
+      font-weight: 100;
+      font-size: 0.875em;
+    }
+  }
+
+  .actions {
+    display: flex; 
+    justify-content: center;
+
+    a {
+      cursor: pointer;
+      color: $main-color;
+    }
+
+    i {
+      font-size: 2.25em;
+
+      &:hover {
+        color: $secundary-color;
+      }
+    }
+  }
+}
+
+// Main Footer
+.main-footer {
+  background: url('../img/footer-bg.jpg') no-repeat center;
 }
