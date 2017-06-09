@@ -28,4 +28,72 @@ img {
 .destaques {
   max-width: $container;
   margin: 60px auto;
+
+  .destaques-link {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin-right: 20px;
+      color: $main-color;
+      font-size: 2em;
+    } 
+  }
+
+  .destaques-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    .destaques-info {
+      flex: 2 1 300px;
+	    margin: 20px 10px;
+      display: flex;
+      align-items: flex-start;
+      // flex-wrap: wrap;
+
+      .destaques-img {
+        flex: 2;
+      }
+
+      .des {
+        flex: 1;
+      }
+    }
+  }
+}
+
+// Banner
+.banner-bg {
+  background: url('../img/panorama-pampulha.jpg') no-repeat center;
+  padding: 130px;
+
+  .banner-info {
+    color: #fff;
+    max-width: $container;
+
+    h2 {
+      font-size: 2em;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    p {
+      max-width: 520px;
+      margin-bottom: 40px;
+      line-height: 1.4;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: $main-color;
+      color: #fff;
+      cursor: pointer;
+      border: 0;
+      border-radius: 100px;
+      font-size: 1em;
+    }
+  }
 }
