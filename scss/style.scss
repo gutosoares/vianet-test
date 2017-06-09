@@ -1,3 +1,5 @@
+@import 'variables';
+
 // Reset
 * {
   box-sizing: border-box;
@@ -6,7 +8,7 @@
 }
 
 body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: $font-default;
 }
 
 ul {
@@ -24,6 +26,6 @@ img {
 
 // Destaques
 .destaques {
-  max-width: 960px;
+  max-width: $container;
   margin: 60px auto;
 }
