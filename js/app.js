@@ -11,4 +11,16 @@ $(document).ready(function() {
     $(this).addClass('active');
     $(destaqueId).addClass('active');
   });
+
+  $('.destaques-footer a').click(function(e) {
+    e.preventDefault();
+    $('#modal').fadeIn(300);
+  });
+
+  $('.close, #modal').click(function(e) {
+    if(e.target !== this) {
+      return;
+    }
+    $('#modal').fadeOut(100);
+  });
 });
