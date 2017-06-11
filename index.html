@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Barros Corretora</title>
 </head>
@@ -12,10 +12,92 @@
   <div id="app">
     <section class="destaques">
       <div class="destaques-link">
-        <a href="#">Destaques venda</a>
-        <a href="#">Destaques aluguel</a>
+        <a href="#vendas"><i class="fa fa-chevron-down" aria-hidden="true"></i> Destaques venda</a>
+        <a href="#alugel">Destaques aluguel <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
       </div>
-      <div class="destaques-container">
+      <div class="destaques-container" id="vendas">
+        <div class="destaques-item">
+          <div class="destaques-img">
+            <img src="img/imovel.jpg" alt="Castelo Casa Germinada">
+          </div>
+          <div class="destaques-info">
+            <h2>Castelo</h2> 
+            <h2>Casa Germinada</h2>
+            <ul>
+              <li><i class="fa fa-arrows-alt" aria-hidden="true"></i><span>250m</span></li>
+              <li><i class="fa fa-tint" aria-hidden="true"></i><span>2 banho(s)</span></li>
+              <li><i class="fa fa-bed" aria-hidden="true"></i><span>2 quarto(s)</span></li>
+              <li><i class="fa fa-car" aria-hidden="true"></i><span>2 vaga(s)</span></li>
+            </ul>
+            <div class="destaques-footer">
+              <p>R$ 10.000.000,00</p>
+              <a type="button"><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-item">
+          <div class="destaques-img">
+            <img src="img/imovel.jpg" alt="Castelo Casa Germinada">
+          </div>
+          <div class="destaques-info">
+            <h2>Castelo</h2> 
+            <h2>Casa Germinada</h2>
+            <ul>
+              <li><i class="fa fa-arrows-alt" aria-hidden="true"></i><span>250m</span></li>
+              <li><i class="fa fa-tint" aria-hidden="true"></i><span>2 banho(s)</span></li>
+              <li><i class="fa fa-bed" aria-hidden="true"></i><span>2 quarto(s)</span></li>
+              <li><i class="fa fa-car" aria-hidden="true"></i><span>2 vaga(s)</span></li>
+            </ul>
+            <div class="destaques-footer">
+              <p>R$ 10.000.000,00</p>
+              <a type="button"><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-item">
+          <div class="destaques-img">
+            <img src="img/imovel.jpg" alt="Castelo Casa Germinada">
+          </div>
+          <div class="destaques-info">
+            <h2>Castelo</h2> 
+            <h2>Casa Germinada</h2>
+            <ul>
+              <li><i class="fa fa-arrows-alt" aria-hidden="true"></i><span>250m</span></li>
+              <li><i class="fa fa-tint" aria-hidden="true"></i><span>2 banho(s)</span></li>
+              <li><i class="fa fa-bed" aria-hidden="true"></i><span>2 quarto(s)</span></li>
+              <li><i class="fa fa-car" aria-hidden="true"></i><span>2 vaga(s)</span></li>
+            </ul>
+            <div class="destaques-footer">
+              <p>R$ 10.000.000,00</p>
+              <a type="button"><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-item">
+          <div class="destaques-img">
+            <img src="img/imovel.jpg" alt="Castelo Casa Germinada">
+          </div>
+          <div class="destaques-info">
+            <h2>Castelo</h2> 
+            <h2>Casa Germinada</h2>
+            <ul>
+              <li><i class="fa fa-arrows-alt" aria-hidden="true"></i><span>250m</span></li>
+              <li><i class="fa fa-tint" aria-hidden="true"></i><span>2 banho(s)</span></li>
+              <li><i class="fa fa-bed" aria-hidden="true"></i><span>2 quarto(s)</span></li>
+              <li><i class="fa fa-car" aria-hidden="true"></i><span>2 vaga(s)</span></li>
+            </ul>
+            <div class="destaques-footer">
+              <p>R$ 10.000.000,00</p>
+              <a type="button"><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="destaques-container" id="alugel">
         <div class="destaques-item">
           <div class="destaques-img">
             <img src="img/imovel.jpg" alt="Castelo Casa Germinada">
@@ -171,7 +253,7 @@
 
   </div>
 
-  <script src="js/vue.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

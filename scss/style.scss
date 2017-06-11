@@ -7,13 +7,13 @@
 
   .destaques-link {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     margin-bottom: 40px;
 
     a {
       margin-right: 20px;
-      color: $main-color;
+      color: lighten($main-color, 40%);
       font-size: 2em;
     } 
   }
@@ -91,6 +91,26 @@
   }
 }
 
+// Destaques Animations
+.destaques-link a.active {
+  color: $main-color;
+}
+
+.destaques-container {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transform: translate3d(-50px, 0, 0);
+}
+
+.destaques-container.active {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  transform: translate3d(0px, 0, 0);
+  transition: .3s;
+}
+
 // Banner
 .banner-bg {
   background: url('../img/panorama-pampulha.jpg') no-repeat center;
@@ -120,6 +140,10 @@
       border: 0;
       border-radius: 100px;
       font-size: 1em;
+
+      &:hover {
+        background: $secundary-color;
+      }
     }
   }
 }
