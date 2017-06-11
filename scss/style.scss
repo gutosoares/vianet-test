@@ -84,6 +84,10 @@
       display: flex;
       justify-content: space-between;
 
+      button {
+        border: none;
+      }
+
       i {
         font-size: 1.125em;
       }
@@ -273,3 +277,102 @@ footer {
   font-size: 0.8em;
 }
 
+// Modal
+#modal {
+  background: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 1;
+}
+
+.modal-box {
+  background: #fff;
+  width: 50%;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -25%;
+  margin-top: -150px;
+  border-radius: 5px;
+  color: $secundary-color;
+}
+
+.close {
+  padding: 5px 10px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.close:hover {
+  color: #666;
+  background: rgba(255, 255, 255, .8);
+}
+
+.modal-header {
+  background: $main-color;
+  height: 40px;
+
+  h2 {
+    padding: 5px 0 5px 10px;
+    color: #fff;
+    font-family: $font-light;
+    font-size: 1em;
+  }
+}
+
+.modal-content {
+  margin: 20px 40px;
+
+  p {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    label {
+      flex: none;
+      display: block;
+      width: 125px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .input-control {
+      flex: 1 1 auto;
+      display: block;
+      margin-bottom: 10px;
+      margin-right: 8px;
+      padding: 4px;
+      margin-top: -4px;
+      border: none;
+    }
+
+    button {
+      margin: 0 auto;
+      padding: 15px 20px;
+      background: $main-color;
+      color: #fff;
+      cursor: pointer;
+      border: 0;
+      border-radius: 100px;
+      font-size: 1em;
+
+      &:hover {
+        background: $secundary-color;
+      }
+    }
+  }
+}
